@@ -1,111 +1,79 @@
 import Head from "next/head";
 import { FormattedMessage, useIntl } from "react-intl";
-import { Grid } from "@mui/material";
+import { GetStaticProps, InferGetStaticPropsType } from "next";
+import { getBeroepstakenOrVaardigheden } from "../util/getBeroepstakenOrVaardigheden";
+import { useRouter } from "next/router";
+import DefaultErrorPage from "next/error";
+import { LevelsCard } from "../components/LevelsCard";
+import { Skill, skills } from "../types/Vaardigheid";
+import { filterVaardigheden } from "../util/filterVaardigheden";
 import { NavigationCardButton } from "../components/NavigationCardButton";
 import { NavigationCard } from "../components/NavigationCard";
-import { useRouter } from "next/router";
-import { GetStaticProps, InferGetStaticPropsType } from "next";
-import { BeroepstakenOrVaardigheden as BeroepstakenType } from "../types/BeroepstakenOrVaardigheden";
-import { getBeroepstakenOrVaardigheden } from "../util/getBeroepstakenOrVaardigheden";
-import { filterBeroepstaken } from "../util/filterBeroepstaken";
-import { LevelsCard } from "../components/LevelsCard";
-import {
-  architecture_layers,
-  Architectuurlaag,
-} from "../types/Architectuurlaag";
-import { Activiteit, activities } from "../types/Activiteit";
-import DefaultErrorPage from "next/error";
+import { Grid } from "@mui/material";
 
 export const getStaticProps: GetStaticProps = async (context) => {
   // static site generation
-  const beroepstaken = await getBeroepstakenOrVaardigheden(
-    "hboi",
+  const vaardigheden = await getBeroepstakenOrVaardigheden(
+    "vaardigheden",
     context.locale === "en" ? "en" : "nl"
   );
 
   if (context.locale === "en")
-    // disable english translations whilst there are none
+    // disable english translation whilst there is none
     return {
       notFound: true,
     };
 
   return {
     props: {
-      beroepstaken,
+      vaardigheden,
     },
   };
 };
 
-export default function Beroepstaken({
-  beroepstaken,
+export default function Vaardigheden({
+  vaardigheden,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   const intl = useIntl();
   const router = useRouter();
 
-  const { activiteit, architectuurlaag } = router.query as {
+  const { vaardigheid } = router.query as {
     [key: string]: string;
   };
 
-  if (activiteit && !activities.includes(activiteit as Activiteit))
+  if (vaardigheid && !skills.includes(vaardigheid as Skill))
     return <DefaultErrorPage statusCode={404} />;
 
-  if (
-    architectuurlaag &&
-    !architecture_layers.includes(architectuurlaag as Architectuurlaag)
-  )
-    return <DefaultErrorPage statusCode={404} />;
-
-  const filteredBeroepstaken: BeroepstakenType = filterBeroepstaken(
-    beroepstaken,
-    {
-      activiteit,
-      architectuurlaag,
-    }
-  );
+  const filteredVaardigheden = filterVaardigheden(vaardigheden, {
+    vaardigheid,
+  });
 
   return (
     <>
       <Head>
-        <title>LEF - {intl.formatMessage({ id: "PROFESSIONAL_DUTIES" })}</title>
+        <title>LEF - {intl.formatMessage({ id: "SKILLS" })}</title>
       </Head>
       <Grid container spacing={2}>
-        <Grid item xs={12} sm={6}>
+        <Grid item xs={12}>
           <NavigationCard
-            title={<FormattedMessage id="ARCHITECTURE_LAYERS" />}
-            subheader={<FormattedMessage id="ARCHITECTURE_LAYERS_SUBHEADER" />}
+            title={<FormattedMessage id="SKILLS" />}
+            subheader={<FormattedMessage id="SKILLS_SUBHEADER" />}
           >
-            {architecture_layers.map((architecture_layer) => (
+            {skills.map((skill) => (
               <NavigationCardButton
-                key={architecture_layer}
-                title={<FormattedMessage id={architecture_layer} />}
-                query_param_key="architectuurlaag"
-                query_param_value={architecture_layer}
-                props={{ xs: 12 }}
+                key={skill}
+                title={<FormattedMessage id={skill} />}
+                query_param_key="vaardigheid"
+                query_param_value={skill}
               />
             ))}
           </NavigationCard>
         </Grid>
-        <Grid item xs={12} sm={6}>
-          <NavigationCard
-            title={<FormattedMessage id="ACTIVITIES" />}
-            subheader={<FormattedMessage id="ACTIVITIES_SUBHEADER" />}
-          >
-            {activities.map((activity) => (
-              <NavigationCardButton
-                key={activity}
-                title={<FormattedMessage id={activity} />}
-                query_param_key="activiteit"
-                query_param_value={activity}
-                props={{ xs: 12 }}
-              />
-            ))}
-          </NavigationCard>
-        </Grid>
-        {Object.keys(filteredBeroepstaken).map((beroepstaakKey) => (
+        {Object.keys(filteredVaardigheden).map((vaardighedenKey) => (
           <LevelsCard
-            key={beroepstaakKey}
-            title={beroepstaakKey}
-            item={filteredBeroepstaken[beroepstaakKey]}
+            key={vaardighedenKey}
+            title={vaardighedenKey}
+            item={filteredVaardigheden[vaardighedenKey]}
           />
         ))}
       </Grid>
