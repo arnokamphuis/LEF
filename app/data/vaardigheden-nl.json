@@ -19,19 +19,19 @@
     },
     "Kwalitatief product maken": {
         "1": {
-            "title": "Taakgericht\n\nStudent gebruikt voor het maken van producten opgestelde acceptatie- en kwaliteitscriteria die passend zijn voor dit niveau en toont aan hoe deze criteria zijn toegepast in/op het product. Student laat zien in staat te zijn om producten op niveau 1 te kunnen opleveren.",
+            "title": "Taakgericht\n\nStudent laat zien in staat te zijn om (beroeps)producten passend bij de uitvoering van de beroepstaak op taakgericht niveau, te maken. Student gebruikt hiervoor opgestelde acceptatie- en kwaliteitscriteria en toont aan hoe deze criteria zijn toegepast in/op de producten. ",
             "info": ""
         },
         "2": {
-            "title": "Probleemgericht\n\nStudent gebruikt voor het maken van producten opgestelde acceptatie- en kwaliteitscriteria die passend zijn voor dit niveau en toont aan hoe deze criteria zijn toegepast in/op het product. Student laat zien in staat te zijn om producten op niveau 2 te kunnen opleveren. Student draagt zorg voor de samenhang tussen enkele relevante producten.",
+            "title": "Probleemgericht\n\nStudent laat zien in staat te zijn om (beroeps)producten passend bij de uitvoering van de beroepstaak op probleemgericht niveau, te maken. Student gebruikt hiervoor opgestelde acceptatie- en kwaliteitscriteria en toont aan hoe deze criteria zijn toegepast in/op de producten. Student draagt zorg voor de samenhang tussen enkele relevante (beroeps)producten en de context. ",
             "info": ""
         },
         "3": {
-            "title": "Situatiegericht\n\nStudent gebruikt voor het maken van producten opgestelde acceptatie- en kwaliteitscriteria die passend zijn voor dit niveau en toont aan hoe deze criteria zijn toegepast in/op het product. Student laat zien in staat te zijn om producten op niveau 3 te kunnen opleveren. Student draagt zorg voor de samenhang tussen alle relevante producten.",
+            "title": "Situatiegericht\n\nStudent laat zien in staat te zijn om (beroeps)producten passend bij de uitvoering van de beroepstaak op situatiegericht niveau, te maken. Student gebruikt hiervoor opgestelde acceptatie- en kwaliteitscriteria en toont aan hoe deze criteria zijn toegepast in/op de producten. Student draagt zorg voor de samenhang tussen alle relevante (beroeps)producten onderling en de context. ",
             "info": ""
         },
         "4": {
-            "title": "Professiegericht\n\nStudent gebruikt voor het maken van producten opgestelde acceptatie- en kwaliteitscriteria die passend zijn voor dit niveau en toont aan hoe deze criteria zijn toegepast in/op het product. Student laat zien in staat te zijn om producten op niveau 4 te kunnen opleveren. Student draagt zorg voor de samenhang tussen alle relevante producten.",
+            "title": "Professiegericht\n\nStudent laat zien in staat te zijn om (beroeps)producten passend bij de uitvoering van de beroepstaak op professiegericht niveau, te maken. Student gebruikt hiervoor opgestelde acceptatie- en kwaliteitscriteria en toont aan hoe deze criteria zijn toegepast in/op de producten. Student draagt zorg voor de samenhang tussen alle relevante (beroeps)producten onderling en de context. ",
             "info": ""
         }
     },
@@ -145,19 +145,19 @@
     },
     "Pro-actief handelen": {
         "1": {
-            "title": "Taakgericht\n\nStudent ziet zelf kansen op de korte termijn en neemt zelf het initiatief voor de ontwikkeling van zichzelf en het team en/of de student herkent zelf problemen op korte termijn en neemt zelf het tijdig het initiatief om deze te voorkomen of op te lossen. De student laat zien dat het initiatief effect heeft gehad.",
+            "title": "Taakgericht\n\nStudent ziet zelf kansen op de korte termijn en neemt zelf het initiatief voor de ontwikkeling van zichzelf en het team en/of de student herkent zelf problemen op korte termijn en neemt zelf het tijdig het inititief om deze te voorkomen of op te lossen. De student laat zien dat het initiatief effect heeft gehad.",
             "info": ""
         },
         "2": {
-            "title": "Probleemgericht\n\nStudent ziet zelf kansen op de middellange termijn en neemt zelf het initiatief voor ontwikkeling van zichzelf, het team en de opdrachtgever. Student herkent zelf problemen op middellange termijn en neemt zelf het tijdig het initiatief om deze te voorkomen of op te lossen. De student laat zien dat het initiatief effect heeft gehad.",
+            "title": "Probleemgericht\n\nStudent ziet zelf kansen op de middellange termijn en neemt zelf het initiatief voor ontwikkeling van zichzelf, het team en de opdrachtgever. Student herkent zelf problemen op middellange termijn en neemt zelf het tijdig het inititief om deze te voorkomen of op te lossen. De student laat zien dat het initiatief effect heeft gehad.",
             "info": ""
         },
         "3": {
-            "title": "Situatiegericht\n\nStudent ziet zelf kansen op de lange termijn en  neemt zelf het initiatief voor ontwikkeling van direct betrokkenen. Student herkent zelf problemen op lange termijn en neemt zelf het tijdig het initiatief om deze te voorkomen of op te lossen. De student laat zien dat het initiatief effect heeft gehad.",
+            "title": "Situatiegericht\n\nStudent ziet zelf kansen op de lange termijn en  neemt zelf het initiatief voor ontwikkeling van direct betrokkenen. Student herkent zelf problemen op lange termijn en neemt zelf het tijdig het inititief om deze te voorkomen of op te lossen. De student laat zien dat het initiatief effect heeft gehad.",
             "info": ""
         },
         "4": {
-            "title": "Professiegericht\n\nStudent ziet zelf kansen op de lange termijn en neemt zelf het initiatief voor ontwikkeling van direct en indirect betrokkenen. Student herkent zelf problemen op lange termijn en neemt zelf het tijdig het initiatief om deze te voorkomen of op te lossen. De student laat zien dat het initiatief effect heeft gehad. Student activeert anderen om tijdig kansen te pakken en problemen te voorkomen of op te lossen.",
+            "title": "Professiegericht\n\nStudent ziet zelf kansen op de lange termijn en neemt zelf het initiatief voor ontwikkeling van direct en indirect betrokkenen. Student herkent zelf problemen op lange termijn en neemt zelf het tijdig het inititief om deze te voorkomen of op te lossen. De student laat zien dat het initiatief effect heeft gehad. Student activeert anderen om tijdig kansen te pakken en problemen te voorkomen of op te lossen.",
             "info": ""
         }
     },

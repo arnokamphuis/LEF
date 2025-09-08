@@ -29,7 +29,7 @@ export default function Beroepstaken({
             <Typography variant="h5">De HCAI-beroepstaak</Typography>
             <Typography variant="body1" paragraph>
                 <i>
-                &apos;De student ontwerpt en ontwikkelt een AI-oplossing voor een complexe praktijksituatie en integreert daarin state-of-the-art kennis van technische mogelijkheden en meerdere human-centered (bijvoorbeeld ethische, sociaalmaatschappelijke en juridische) aspecten. Dit doet de student door middel van praktijkgericht onderzoek, waarin telkens op kritische wijze de juiste balans wordt gezocht tussen technische en human-centered aspecten en tussen praktische relevantie en methodologische grondigheid.&apos;
+                &apos;De student ontwerpt en ontwikkelt een AI-oplossing en integreert daarin  kennis van technische mogelijkheden en meerdere human-centered (bijvoorbeeld ethische, sociaalmaatschappelijke en juridische) aspecten. Dit doet de student door op kritische wijze de juiste balans te vinden tussen technische aspecten en human-centered aspecten.&apos;
                 </i>
             </Typography>
             <Typography variant="body1" paragraph>
